@@ -26,11 +26,24 @@ while count < len(number):
 # Не нужно решать задачу так:
 # print("a = ", b, "b = ", a) - это неправильное решение!
 
-firstnumber = int("Введите первое число: ")
-secondnumber = int("Введите второе число: ")
+print('') # пробел после прошлой программы
+firstNumber = int(input("Введите первое число: "))
+secondNumber = int(input("Введите второе число: "))
+variableNumber = firstNumber
+firstNumber = secondNumber
+secondNumber = variableNumber
+
+print('Меняем местами..\n', 'Первое число : ', firstNumber, '\nВторое число: ', secondNumber)
 
 
 
 # Задача-3: Запросите у пользователя его возраст.
 # Если ему есть 18 лет, выведите: "Доступ разрешен",
 # иначе "Извините, пользование данным ресурсом только с 18 лет"
+
+print('') # Пробел
+age = int(input('Сколько вам лет? : '))
+if age <= 18:
+    print("Извините, вам нельзя :)")
+else:
+    print("Добро пожаловать в увлекательный мир!")
